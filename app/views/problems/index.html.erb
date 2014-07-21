@@ -1,0 +1,14 @@
+<h1>Problems to tend to</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+  <% @problems.each do |problem| %>
+    <tr>
+      <td><%= problem.name %></td>
+      <td><%= problem.description %></td>
+    </tr>
+  <% end %>
+</table>
